@@ -1,0 +1,102 @@
+<!-- Left Menu Items -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="css/teacher-desk-styles.css">
+</head>
+<body>
+    <header>
+    </header>
+<!-- Left Menu Items -->
+<nav class="side-menu">
+    <div class="profile-photo">
+    <!-- You can use the teacher's first name's first letter as a default image -->
+    <div class="teacher-avatar">T</div>
+    <div class="profile-buttons">
+        <button id="my-account-button">
+            <img src="myaccount.png" alt="My Account" />
+        </button>
+        <button id="logout-button">
+            <img src="logout.png" alt="Log Out" />
+        </button>
+    </div>
+</div>
+
+    
+    <ul>
+        <li><a class="menu-item" data-section="dashboard">Dashboard</a></li>
+        <li class="active"><a class="menu-item" data-section="my-classes">My Classes</a></li>
+        <li class="add-class"><a class="menu-item" data-section="add-class">Add a Class</a></li>
+        <li><a class="menu-item" data-section="lessons">Lessons</a></li>
+        <li><a class="menu-item" data-section="homeworks">Homeworks</a></li>
+            </ul>
+        </li>
+        <!-- Add more menu items here -->
+    </ul>
+</nav>
+
+<!-- Main Content Area -->
+<main class="main-content">
+    <!-- Content for Dashboard -->
+    <section class="dashboard">
+        <!-- Notification Center -->
+    <div class="notification-center">
+        <!-- Notification Messages will be inserted here -->
+    </div>
+        <!-- Add content for the dashboard page here -->
+    </section>
+
+    <!-- Content for My Classes -->
+    <section class="my-classes">
+        <!-- Add content for My Classes here -->
+    </section>
+
+    <!-- Content for Add Class -->
+<!-- HTML form for adding classes -->
+<form id="addClassForm">
+    <label for="classname">Class Name:</label>
+    <input type="text" id="classname" name="classname" required>
+    
+    <label for="class_description">Class Description:</label>
+    <textarea id="class_description" name="class_description" rows="4" required></textarea>
+    
+    <label for="subject">Subject:</label>
+    <select name="subject" id="subject" required>
+        <option value="mathematics">Mathematics</option>
+        <option value="physics">Physics</option>
+    </select>
+    <label for="grade">Grade:</label>
+    <select name="grade" id="grade" required>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="custom">Mixed</option>
+    </select>
+
+    <label for="start_date">Start Date:</label>
+    <input type="date" id="start_date" name="start_date" required>
+    
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date" required>
+    
+    <button type="submit">Add Class</button>
+  </form>
+  
+    <!-- Content for Materials -->
+    <section class="lessons">
+        <!-- Add content for Materials (Lessons and Homeworks) here -->
+    </section>
+        <!-- Content for Materials -->
+    <section class="homeworks">
+        <!-- Add content for Materials (Lessons and Homeworks) here -->
+    </section>
+
+</main>
+<script type="module" src="js/dashboard-spa.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <!-- Link to your external stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Use the "container" class for styling -->
+    <div class="container">
+        <h1>Email Verification</h1>
+        <% if (userVerified) { %>
+            <p>Verification successful! You can now log in.</p>
+        <% } else { %>
+            <p>Verification failed. Please contact our support team for assistance.</p>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+body, h1, h2, p, label, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font */
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Center the form container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content horizontally */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Align labels to the left */
+}
+
+/* Style input and select fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%; /* Full width input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+
+/* Style submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4284F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Success message styles */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reg-login-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Teacher Registration</title>
+</head>
+<body>
+<div class="parent-container">
+    <div class="container">
+        <h1>Teacher Registration</h1>
+        <form id="registration-form" action="/teacher-regver" method="POST">
+            <label for="school">School:</label>
+            <select id="school" name="school">
+                <option value="Newton">Newton</option>
+                <!-- Add more school options here -->
+            </select>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="Mathematics">Mathematics</option>
+                <!-- Add more subject options here -->
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="verify-password">Verify Password:</label>
+            <input type="password" id="verify-password" name="verify-password" required>
+
+            <!-- Add a div for error messages -->
+            <div class="error-message"></div>
+
+            <button type="submit" id="register-button">Register</button>
+        </form>
+        <!-- Add the "hide" class to hide the success message initially -->
+    <script src="js/teacher-registration-script.js"></script>
+</body>
+</html>

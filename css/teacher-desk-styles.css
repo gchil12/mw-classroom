@@ -1,0 +1,271 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.teacher-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #3cff00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logout-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Side Menu Styles */
+.side-menu {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 60px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.side-menu ul {
+    list-style: none;
+}
+
+.side-menu ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.side-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.side-menu ul li:hover {
+    background-color: #007bff;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Add Class Form Styles */
+.add-class-form {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.add-class-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .side-menu {
+        width: 100px;
+    }
+
+    .main-content {
+        margin-left: 100px;
+    }
+
+    .add-class-form {
+        width: 100%;
+    }
+}
+/* ... Existing CSS rules ... */
+
+/* Highlight active menu item */
+.side-menu ul li.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Add a Class link styles */
+.side-menu ul li.add-class.active a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Materials section styles */
+.side-menu ul li.materials {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Lessons and Homeworks links styles */
+.side-menu ul li.materials a {
+    color: #fff;
+    padding-left: 20px; /* Adjust the left padding as needed */
+}
+
+/* Welcome page styles */
+.main-content.welcome {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* ... Existing responsive styles ... */
+}
+
+.profile-photo {
+    padding: 10px;
+    margin: 10px; /* Added margin to create the desired spacing */
+}
+
+.teacher-avatar {
+    width: 160px; /* Calculate the width with margin */
+    height: 160px;/* You can adjust the height as needed */
+    background-color: #fff;
+    color: #3cff00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+.profile-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line to vertically align the buttons */
+    width: 100%;
+}
+
+.profile-buttons a {
+    text-decoration: none;
+}
+
+.profile-buttons img {
+    max-width: 30px; /* Adjust the maximum width as needed */
+    height: auto; /* This will maintain the aspect ratio */
+    cursor: pointer;
+}
